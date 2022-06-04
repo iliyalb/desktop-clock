@@ -11,6 +11,7 @@ import javax.swing.border.*;
  * @author Michael Kölling and David J. Barnes
  * @version 2011.07.31
  */
+
 public class Clock
 {
     private JFrame frame;
@@ -188,5 +189,11 @@ public class Clock
             catch (InterruptedException exc) {
             }
         }
+    }
+    
+    public static void main(String[] args)
+    {
+        Clock clk = new Clock();
+        clk.makeFrame();
     }
 }
